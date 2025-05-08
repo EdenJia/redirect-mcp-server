@@ -45,7 +45,7 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       | undefined;
     try {
       if (args?.siteId != null && args?.subsiteCode != null) {
-        // testing against locally running redirects api
+        // testing against locally running redirects-api
         const response = await fetch(
           "http://localhost:8080/redirects/" + args.siteId + "-" + args.subsiteCode,
           {
