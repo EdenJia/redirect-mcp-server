@@ -1,0 +1,12 @@
+{
+    "servers": {
+        "redirect-mcp-server": {
+            "command": "node",
+            "args": [
+                "--loader",
+                "ts-node/esm",
+                "src/index.ts"
+            ]
+        }
+    }
+}
